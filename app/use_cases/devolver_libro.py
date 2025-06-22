@@ -6,4 +6,4 @@ class DevolverLibroUseCase:
     def execute(self, usuario: Usuario, libro: Libro):
         usuario.devolver_libro(libro.id)
         libro.devolver()
-        return f"Libro '{libro.titulo}' devuelto por {usuario.nombre}."
+        return f"Book '{libro.titulo}' returned by {usuario.nombre}."

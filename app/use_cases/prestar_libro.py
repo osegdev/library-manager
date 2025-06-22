@@ -9,4 +9,4 @@ class PrestarLibroUseCase:
 
         usuario.prestar_libro(libro.id)
         libro.prestar()
-        return f"Libro '{libro.titulo}' prestado a {usuario.nombre}."
+        return f"Book '{libro.titulo}' lent to {usuario.nombre}."
