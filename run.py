@@ -12,3 +12,8 @@ print(libro)
 print(usuario)
 print(prestar.execute(usuario, libro))  # Debería prestar el libro
 print(devolver.execute(usuario, libro))  # Debería devolver el libro
+
+for h in usuario.historial:
+    print(
+        f"Libro: {h.libro_id}, prestado: {h.fecha_prestamo}, devuelto: {h.fecha_devolucion}, penalizado: {h.penalizado}"
+    )
